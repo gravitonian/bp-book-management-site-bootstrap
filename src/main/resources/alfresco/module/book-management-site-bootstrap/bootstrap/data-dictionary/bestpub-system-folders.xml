@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:view xmlns:view="http://www.alfresco.org/view/repository/1.0"
+           xmlns:cm="http://www.alfresco.org/model/content/1.0"
+           xmlns:sys="http://www.alfresco.org/model/system/1.0"
+           xmlns:app="http://www.alfresco.org/model/application/1.0">
+    <cm:folder view:childName="cm:BestPub">
+        <view:aspects>
+            <cm:titled></cm:titled>
+            <cm:auditable></cm:auditable>
+            <sys:referenceable></sys:referenceable>
+            <cm:taggable></cm:taggable>
+            <sys:localized></sys:localized>
+        </view:aspects>
+        <view:acl></view:acl>
+        <view:properties>
+            <cm:created>2017-05-19T09:57:49.713Z</cm:created>
+            <cm:title>
+                <view:mlvalue view:locale="en"></view:mlvalue>
+            </cm:title>
+            <cm:taggable>
+                <view:value view:isNull="true"></view:value>
+            </cm:taggable>
+            <cm:description>
+                <view:mlvalue view:locale="en">Best Publishing System Folder</view:mlvalue>
+            </cm:description>
+            <cm:creator>admin</cm:creator>
+            <sys:node-uuid>f67ce802-0173-4263-9086-b06828abbfe0</sys:node-uuid>
+            <cm:name>BestPub</cm:name>
+            <sys:store-protocol>workspace</sys:store-protocol>
+            <sys:store-identifier>SpacesStore</sys:store-identifier>
+            <sys:node-dbid>952</sys:node-dbid>
+            <sys:locale>en_GB_</sys:locale>
+            <cm:modifier>admin</cm:modifier>
+            <cm:modified>2017-05-19T09:58:12.867Z</cm:modified>
+        </view:properties>
+        <view:associations>
+            <cm:contains>
+                <cm:folder view:childName="cm:Incoming">
+                    <view:aspects>
+                        <cm:titled></cm:titled>
+                        <cm:auditable></cm:auditable>
+                        <sys:referenceable></sys:referenceable>
+                        <sys:localized></sys:localized>
+                    </view:aspects>
+                    <view:acl></view:acl>
+                    <view:properties>
+                        <cm:created>2017-05-19T09:58:12.858Z</cm:created>
+                        <cm:title>
+                            <view:mlvalue view:locale="en"></view:mlvalue>
+                        </cm:title>
+                        <cm:description>
+                            <view:mlvalue view:locale="en"></view:mlvalue>
+                        </cm:description>
+                        <cm:creator>admin</cm:creator>
+                        <sys:node-uuid>eb470dcb-45ec-41eb-83e0-edc69ae61443</sys:node-uuid>
+                        <cm:name>Incoming</cm:name>
+                        <sys:store-protocol>workspace</sys:store-protocol>
+                        <sys:store-identifier>SpacesStore</sys:store-identifier>
+                        <sys:node-dbid>953</sys:node-dbid>
+                        <sys:locale>en_GB_</sys:locale>
+                        <cm:modifier>admin</cm:modifier>
+                        <cm:modified>2017-05-19T10:00:59.573Z</cm:modified>
+                    </view:properties>
+                    <view:associations>
+                        <cm:contains>
+                            <cm:folder view:childName="cm:Content">
+                                <view:aspects>
+                                    <cm:titled></cm:titled>
+                                    <cm:auditable></cm:auditable>
+                                    <sys:referenceable></sys:referenceable>
+                                    <sys:localized></sys:localized>
+                                </view:aspects>
+                                <view:acl></view:acl>
+                                <view:properties>
+                                    <cm:created>2017-05-19T09:58:18.063Z</cm:created>
+                                    <cm:title>
+                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                    </cm:title>
+                                    <cm:description>
+                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                    </cm:description>
+                                    <cm:creator>admin</cm:creator>
+                                    <sys:node-uuid>2f68009c-75b6-4c95-9605-89aa36938b1d</sys:node-uuid>
+                                    <cm:name>Content</cm:name>
+                                    <sys:store-protocol>workspace</sys:store-protocol>
+                                    <sys:store-identifier>SpacesStore</sys:store-identifier>
+                                    <sys:node-dbid>954</sys:node-dbid>
+                                    <sys:locale>en_GB_</sys:locale>
+                                    <cm:modifier>admin</cm:modifier>
+                                    <cm:modified>2017-05-19T09:58:18.063Z</cm:modified>
+                                </view:properties>
+                            </cm:folder>
+                            <cm:folder view:childName="cm:Metadata">
+                                <view:aspects>
+                                    <cm:titled></cm:titled>
+                                    <cm:auditable></cm:auditable>
+                                    <sys:referenceable></sys:referenceable>
+                                    <sys:localized></sys:localized>
+                                </view:aspects>
+                                <view:acl></view:acl>
+                                <view:properties>
+                                    <cm:created>2017-05-19T09:58:23.851Z</cm:created>
+                                    <cm:title>
+                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                    </cm:title>
+                                    <cm:description>
+                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                    </cm:description>
+                                    <cm:creator>admin</cm:creator>
+                                    <sys:node-uuid>26c05633-03d5-4faf-bcde-74af5cf8f5ec</sys:node-uuid>
+                                    <cm:name>Metadata</cm:name>
+                                    <sys:store-protocol>workspace</sys:store-protocol>
+                                    <sys:store-identifier>SpacesStore</sys:store-identifier>
+                                    <sys:node-dbid>955</sys:node-dbid>
+                                    <sys:locale>en_GB_</sys:locale>
+                                    <cm:modifier>admin</cm:modifier>
+                                    <cm:modified>2017-05-19T10:00:47.537Z</cm:modified>
+                                </view:properties>
+                                <view:associations>
+                                    <cm:contains>
+                                        <cm:folder view:childName="cm:Manual">
+                                            <view:aspects>
+                                                <cm:titled></cm:titled>
+                                                <cm:auditable></cm:auditable>
+                                                <sys:referenceable></sys:referenceable>
+                                                <sys:localized></sys:localized>
+                                            </view:aspects>
+                                            <view:acl></view:acl>
+                                            <view:properties>
+                                                <cm:created>2017-05-19T10:00:47.527Z</cm:created>
+                                                <cm:title>
+                                                    <view:mlvalue view:locale="en"></view:mlvalue>
+                                                </cm:title>
+                                                <cm:description>
+                                                    <view:mlvalue view:locale="en"></view:mlvalue>
+                                                </cm:description>
+                                                <cm:creator>admin</cm:creator>
+                                                <sys:node-uuid>fe0764ac-bcc3-416c-89d0-de05d7dff5a8</sys:node-uuid>
+                                                <cm:name>Manual</cm:name>
+                                                <sys:store-protocol>workspace</sys:store-protocol>
+                                                <sys:store-identifier>SpacesStore</sys:store-identifier>
+                                                <sys:node-dbid>956</sys:node-dbid>
+                                                <sys:locale>en_GB_</sys:locale>
+                                                <cm:modifier>admin</cm:modifier>
+                                                <cm:modified>2017-05-19T10:00:47.527Z</cm:modified>
+                                            </view:properties>
+                                        </cm:folder>
+                                    </cm:contains>
+                                </view:associations>
+                            </cm:folder>g
+                            <cm:folder view:childName="cm:PublishingStatus">
+                                <view:aspects>
+                                    <cm:titled></cm:titled>
+                                    <cm:auditable></cm:auditable>
+                                    <sys:referenceable></sys:referenceable>
+                                    <sys:localized></sys:localized>
+                                </view:aspects>
+                                <view:acl></view:acl>
+                                <view:properties>
+                                    <cm:created>2017-05-19T10:00:59.565Z</cm:created>
+                                    <cm:title>
+                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                    </cm:title>
+                                    <cm:description>
+                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                    </cm:description>
+                                    <cm:creator>admin</cm:creator>
+                                    <sys:node-uuid>6ce8c1a3-3c65-4c8e-b7cf-27b40e53a274</sys:node-uuid>
+                                    <cm:name>PublishingStatus</cm:name>
+                                    <sys:store-protocol>workspace</sys:store-protocol>
+                                    <sys:store-identifier>SpacesStore</sys:store-identifier>
+                                    <sys:node-dbid>957</sys:node-dbid>
+                                    <sys:locale>en_GB_</sys:locale>
+                                    <cm:modifier>admin</cm:modifier>
+                                    <cm:modified>2017-05-19T10:00:59.565Z</cm:modified>
+                                </view:properties>
+                            </cm:folder>
+                        </cm:contains>
+                    </view:associations>
+                </cm:folder>
+            </cm:contains>
+        </view:associations>
+    </cm:folder>
+</view:view>
