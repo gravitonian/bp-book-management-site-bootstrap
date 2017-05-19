@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<view:view xmlns:view="http://www.alfresco.org/view/repository/1.0"
+           xmlns:cm="http://www.alfresco.org/model/content/1.0"
+           xmlns:sys="http://www.alfresco.org/model/system/1.0"
+           xmlns:usr="http://www.alfresco.org/model/user/1.0">
+
+    <!--
+        Important: Don't use group names with parentheses in them as they are not parsed correctly,
+                    so the whole bootstrap fails in this case.
+                    You can have space in the group ID and Name
+    -->
+
+    <!-- First import the groups into the /sys:system/sys:authorities container -->
+    <view:reference view:pathref="${system.authorities_container.childname}">
+        <view:associations>
+            <sys:children>
+                <cm:authorityContainer view:childName="cm:GROUP_BESTPUB_CONSUMERS">
+                    <view:aspects>
+                        <sys:referenceable />
+                    </view:aspects>
+                    <view:properties>
+                        <sys:node-uuid>Best Publishing Consumers</sys:node-uuid>
+                        <cm:name>GROUP_BESTPUB_CONSUMERS</cm:name>
+                        <cm:authorityName>GROUP_BESTPUB_CONSUMERS</cm:authorityName>
+                    </view:properties>
+                </cm:authorityContainer>
+                <cm:authorityContainer view:childName="cm:GROUP_BESTPUB_COLLABORATORS">
+                    <view:aspects>
+                        <sys:referenceable />
+                    </view:aspects>
+                    <view:properties>
+                        <sys:node-uuid>Best Publishing Collaborators</sys:node-uuid>
+                        <cm:name>GROUP_BESTPUB_COLLABORATORS</cm:name>
+                        <cm:authorityName>GROUP_BESTPUB_COLLABORATORS</cm:authorityName>
+                    </view:properties>
+                </cm:authorityContainer>
+                <cm:authorityContainer view:childName="cm:GROUP_BESTPUB_MANAGERS">
+                    <view:aspects>
+                        <sys:referenceable />
+                    </view:aspects>
+                    <view:properties>
+                        <sys:node-uuid>Best Publishing Managers</sys:node-uuid>
+                        <cm:name>GROUP_BESTPUB_MANAGERS</cm:name>
+                        <cm:authorityName>GROUP_BESTPUB_MANAGERS</cm:authorityName>
+                    </view:properties>
+                </cm:authorityContainer>
+            </sys:children>
+        </view:associations>
+    </view:reference>
+
+    <!-- Each group is also part of the ALF and DEFAULT zones -->
+    <view:reference view:pathref="${system.zones_container.childname}/cm:AUTH.ALF">
+        <view:associations>
+            <cm:inZone>
+                <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_CONSUMERS"
+                                view:childName="cm:GROUP_BESTPUB_CONSUMERS" />
+            </cm:inZone>
+            <cm:inZone>
+                <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_COLLABORATORS"
+                                view:childName="cm:GROUP_BESTPUB_COLLABORATORS" />
+            </cm:inZone>
+            <cm:inZone>
+                <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_MANAGERS"
+                                view:childName="cm:GROUP_BESTPUB_MANAGERS" />
+            </cm:inZone>
+        </view:associations>
+    </view:reference>
+    <view:reference view:pathref="${system.zones_container.childname}/cm:APP.DEFAULT">
+        <view:associations>
+            <cm:inZone>
+                <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_CONSUMERS"
+                                view:childName="cm:GROUP_BESTPUB_CONSUMERS" />
+            </cm:inZone>
+            <cm:inZone>
+                <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_COLLABORATORS"
+                                view:childName="cm:GROUP_BESTPUB_COLLABORATORS" />
+            </cm:inZone>
+            <cm:inZone>
+                <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_MANAGERS"
+                                view:childName="cm:GROUP_BESTPUB_MANAGERS" />
+            </cm:inZone>
+        </view:associations>
+    </view:reference>
+
+</view:view>
+
