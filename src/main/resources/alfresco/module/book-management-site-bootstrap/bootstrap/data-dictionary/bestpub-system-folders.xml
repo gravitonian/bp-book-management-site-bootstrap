@@ -77,7 +77,7 @@
                                         <view:mlvalue view:locale="en"></view:mlvalue>
                                     </cm:title>
                                     <cm:description>
-                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                        <view:mlvalue view:locale="en">The Content Ingestion will upload files here</view:mlvalue>
                                     </cm:description>
                                     <cm:creator>admin</cm:creator>
                                     <sys:node-uuid>2f68009c-75b6-4c95-9605-89aa36938b1d</sys:node-uuid>
@@ -104,7 +104,7 @@
                                         <view:mlvalue view:locale="en"></view:mlvalue>
                                     </cm:title>
                                     <cm:description>
-                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                        <view:mlvalue view:locale="en">The Metadata Ingestion will upload files here</view:mlvalue>
                                     </cm:description>
                                     <cm:creator>admin</cm:creator>
                                     <sys:node-uuid>26c05633-03d5-4faf-bcde-74af5cf8f5ec</sys:node-uuid>
@@ -132,7 +132,7 @@
                                                     <view:mlvalue view:locale="en"></view:mlvalue>
                                                 </cm:title>
                                                 <cm:description>
-                                                    <view:mlvalue view:locale="en"></view:mlvalue>
+                                                    <view:mlvalue view:locale="en">Drop book metadata files here to kick off a workflow instance.</view:mlvalue>
                                                 </cm:description>
                                                 <cm:creator>admin</cm:creator>
                                                 <sys:node-uuid>fe0764ac-bcc3-416c-89d0-de05d7dff5a8</sys:node-uuid>
@@ -162,7 +162,7 @@
                                         <view:mlvalue view:locale="en"></view:mlvalue>
                                     </cm:title>
                                     <cm:description>
-                                        <view:mlvalue view:locale="en"></view:mlvalue>
+                                        <view:mlvalue view:locale="en">The publishing process will upload files here</view:mlvalue>
                                     </cm:description>
                                     <cm:creator>admin</cm:creator>
                                     <sys:node-uuid>6ce8c1a3-3c65-4c8e-b7cf-27b40e53a274</sys:node-uuid>

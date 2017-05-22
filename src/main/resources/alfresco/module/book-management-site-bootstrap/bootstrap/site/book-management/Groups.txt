@@ -1,3 +1,0 @@
-bestpubcollaborator=GROUP_site_book-management_SiteCollaborator
-bestpubconsumer=GROUP_site_book-management_SiteConsumer
-bestpubmanager=GROUP_site_book-management_SiteManager

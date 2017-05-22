@@ -12,12 +12,8 @@
         </view:associations>
     </view:reference>
 
-    <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_CONSUMERS">
+    <view:reference view:pathref="${system.authorities_container.childname}/cm:GROUP_BESTPUB_COLLABORATORS">
         <view:associations>
-            <cm:member>
-                <view:reference view:pathref="${system.people_container.childname}/cm:admin"
-                                view:childName="cm:admin" />
-            </cm:member>
             <cm:member>
                 <view:reference view:pathref="${system.people_container.childname}/cm:bestpubcollaborator"
                                 view:childName="cm:bestpubcollaborator" />

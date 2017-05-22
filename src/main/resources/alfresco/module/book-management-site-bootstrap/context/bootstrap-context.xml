@@ -125,7 +125,30 @@
         </property>
     </bean>
 
-    <!-- Bootstrap the Book Management site including doclib content, users, and groups -->
+    <!-- Bootstrap the Book Management site including doclib content, users, and groups.
+     When updating the ACP, you need to use command line tools so you have full control of the ZIP content and structure.
+     The structure should look something like this when listing the ACP:
+
+     Martins-MBP:book-management-siteW martin$ unzip -l book-management.acp
+        Archivbook-management.acp.acp
+          Length      Date    Time    Name
+        *********  ********** *****   *****
+                0  05-22-2017 09:46   book-management/
+              303  05-22-2017 09:46   book-management/content0.xml
+              323  05-22-2017 09:46   book-management/content1.xml
+              313  05-22-2017 09:46   book-management/content2.xml
+              271  05-22-2017 09:46   book-management/content3.xml
+              276  05-22-2017 09:46   book-management/content4.xml
+              272  05-22-2017 09:46   book-management/content5.xml
+              319  05-22-2017 09:46   book-management/content6.xml
+              704  05-22-2017 09:46   book-management/content7.xml
+            31600  05-22-2017 09:46   book-management.xml
+        *********                     *****
+            34381                     10 files
+
+     To zip up the ACP use:
+     Martins-MBP:book-management-siteW martin$ zip -rv book-management.acp *
+     -->
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bookManagementSiteLoader"
           class="org.alfresco.repo.admin.patch.impl.SiteLoadPatch"
           parent="basePatch">
@@ -151,18 +174,17 @@
             <map>
                 <entry key="contents">
                     <props>
-                        <prop key="location">alfresco/module/${project.artifactId}/bootstrap/site/book-management/book-management-site.acp</prop>
+                        <prop key="location">alfresco/module/${project.artifactId}/bootstrap/site/book-management/book-management.acp</prop>
                     </props>
                 </entry>
-                <!--
                 <entry key="groups">
                     <props>
-                        <prop key="location">alfresco/module/${project.artifactId}/bootstrap/site/book-management/Groups.txt</prop>
+                        <prop key="location">alfresco/module/${project.artifactId}/bootstrap/site/book-management/userAndGroup-roles.txt</prop>
                     </props>
                 </entry>
-                -->
             </map>
         </property>
     </bean>
+
 
 </beans>
