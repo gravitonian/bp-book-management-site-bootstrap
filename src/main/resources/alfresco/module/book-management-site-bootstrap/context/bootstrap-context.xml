@@ -18,8 +18,8 @@
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubPeopleLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
-        <property name="id"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubPeopleLoader</value></property>
-        <property name="description"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubPeopleLoader.description</value></property>
+        <property name="id"><value>patch.bestpublishing.bootstrap.bestPubPeopleLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.bestPubPeopleLoader.description</value></property>
         <property name="fixesFromSchema"><value>0</value></property>
         <property name="fixesToSchema"><value>${version.schema}</value></property>
         <property name="targetSchema"><value>20000</value></property>
@@ -38,8 +38,8 @@
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubUsersLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
-        <property name="id"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubUsersLoader</value></property>
-        <property name="description"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubUsersLoader.description</value></property>
+        <property name="id"><value>patch.bestpublishing.bootstrap.bestPubUsersLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.bestPubUsersLoader.description</value></property>
         <property name="fixesFromSchema"><value>0</value></property>
         <property name="fixesToSchema"><value>${version.schema}</value></property>
         <property name="targetSchema"><value>20000</value></property>
@@ -58,8 +58,8 @@
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupsLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
-        <property name="id"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupsLoader</value></property>
-        <property name="description"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupsLoader.description</value></property>
+        <property name="id"><value>patch.bestpublishing.bootstrap.bestPubGroupsLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.bestPubGroupsLoader.description</value></property>
         <property name="fixesFromSchema"><value>0</value></property>
         <property name="fixesToSchema"><value>${version.schema}</value></property>
         <property name="targetSchema"><value>20000</value></property>
@@ -78,8 +78,8 @@
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
-        <property name="id"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader</value></property>
-        <property name="description"><value>org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader.description</value></property>
+        <property name="id"><value>patch.bestpublishing.bootstrap.bestPubGroupMembershipsLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.bestPubGroupMembershipsLoader.description</value></property>
         <property name="fixesFromSchema"><value>0</value></property>
         <property name="fixesToSchema"><value>${version.schema}</value></property>
         <property name="targetSchema"><value>20000</value></property>
@@ -105,8 +105,8 @@
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.foldersAndFilesLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
-        <property name="id"><value>org.marversolutions.bestpublishing.bootstrap.patch.foldersAndFilesLoader</value></property>
-        <property name="description"><value>org.marversolutions.bestpublishing.bootstrap.patch.foldersAndFilesLoader.description</value></property>
+        <property name="id"><value>patch.bestpublishing.bootstrap.foldersAndFilesLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.foldersAndFilesLoader.description</value></property>
         <property name="fixesFromSchema"><value>0</value></property>
         <property name="fixesToSchema"><value>${version.schema}</value></property>
         <property name="targetSchema"><value>20000</value></property>
@@ -152,8 +152,8 @@
     <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bookManagementSiteLoader"
           class="org.alfresco.repo.admin.patch.impl.SiteLoadPatch"
           parent="basePatch">
-        <property name="id"><value>org.marversolutions.bestpublishing.bootstrap.patch.bookManagementSiteLoader</value></property>
-        <property name="description"><value>org.marversolutions.bestpublishing.bootstrap.patch.bookManagementSiteLoader.description</value></property>
+        <property name="id"><value>patch.bestpublishing.bootstrap.bookManagementSiteLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.bookManagementSiteLoader.description</value></property>
         <property name="fixesFromSchema"><value>0</value></property>
         <property name="fixesToSchema"><value>${version.schema}</value></property>
         <property name="targetSchema"><value>20000</value></property>
