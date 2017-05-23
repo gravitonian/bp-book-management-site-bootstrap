@@ -5,7 +5,7 @@
           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <!-- Bootstrap Title and Description messages for pacthes -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.resourceBundle"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.resourceBundle"
           class="org.alfresco.i18n.ResourceBundleBootstrapComponent">
         <property name="resourceBundles">
             <list>
@@ -15,7 +15,7 @@
     </bean>
 
     <!-- Import People account data -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubPeopleLoader"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.bestPubPeopleLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
         <property name="id"><value>patch.bestpublishing.bootstrap.bestPubPeopleLoader</value></property>
@@ -35,7 +35,7 @@
     </bean>
 
     <!-- Import User account data -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubUsersLoader"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.bestPubUsersLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
         <property name="id"><value>patch.bestpublishing.bootstrap.bestPubUsersLoader</value></property>
@@ -55,7 +55,7 @@
     </bean>
 
     <!-- Import Groups - typically LDAP mapped -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupsLoader"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.bestPubGroupsLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
         <property name="id"><value>patch.bestpublishing.bootstrap.bestPubGroupsLoader</value></property>
@@ -75,7 +75,7 @@
     </bean>
 
     <!-- Import Group memberships -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
         <property name="id"><value>patch.bestpublishing.bootstrap.bestPubGroupMembershipsLoader</value></property>
@@ -85,9 +85,9 @@
         <property name="targetSchema"><value>20000</value></property>
         <property name="dependsOn" >
             <list>
-                <ref bean="org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupsLoader" />
-                <ref bean="org.marversolutions.bestpublishing.bootstrap.patch.bestPubPeopleLoader" />
-                <ref bean="org.marversolutions.bestpublishing.bootstrap.patch.bestPubUsersLoader" />
+                <ref bean="org.acme.bestpublishing.bootstrap.patch.bestPubGroupsLoader" />
+                <ref bean="org.acme.bestpublishing.bootstrap.patch.bestPubPeopleLoader" />
+                <ref bean="org.acme.bestpublishing.bootstrap.patch.bestPubUsersLoader" />
             </list>
         </property>
         <property name="importerBootstrap">
@@ -102,7 +102,7 @@
     </bean>
 
     <!-- Bootstrap the Data Dictionary with Best Publishing system folders for incoming content and metadata -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.foldersAndFilesLoader"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.foldersAndFilesLoader"
           class="org.alfresco.repo.admin.patch.impl.GenericBootstrapPatch"
           parent="basePatch" >
         <property name="id"><value>patch.bestpublishing.bootstrap.foldersAndFilesLoader</value></property>
@@ -149,7 +149,7 @@
      To zip up the ACP use:
      Martins-MBP:book-management-siteW martin$ zip -rv book-management.acp *
      -->
-    <bean id="org.marversolutions.bestpublishing.bootstrap.patch.bookManagementSiteLoader"
+    <bean id="org.acme.bestpublishing.bootstrap.patch.bookManagementSiteLoader"
           class="org.alfresco.repo.admin.patch.impl.SiteLoadPatch"
           parent="basePatch">
         <property name="id"><value>patch.bestpublishing.bootstrap.bookManagementSiteLoader</value></property>
@@ -159,7 +159,7 @@
         <property name="targetSchema"><value>20000</value></property>
         <property name="dependsOn" >
             <list>
-                <ref bean="org.marversolutions.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader" />
+                <ref bean="org.acme.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader" />
             </list>
         </property>
         <property name="spacesBootstrap" ref="siteLoadBootstrap-Spaces"/>
