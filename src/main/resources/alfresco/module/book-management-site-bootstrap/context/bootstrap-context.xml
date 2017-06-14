@@ -125,7 +125,8 @@
         </property>
     </bean>
 
-    <!-- Bootstrap the Book Management site including doclib content, users, and groups.
+    <!--
+     Bootstrap the Book Management site including doclib content, users, and groups.
      When updating the ACP, you need to use command line tools so you have full control of the ZIP content and structure.
      The structure should look something like this when listing the ACP:
 
@@ -186,5 +187,44 @@
         </property>
     </bean>
 
+    <!--
+        Bootstrap the Book Library site including doclib content.
+   -->
+    <bean id="org.acme.bestpublishing.bootstrap.patch.bookLibrarySiteLoader"
+          class="org.alfresco.repo.admin.patch.impl.SiteLoadPatch"
+          parent="basePatch">
+        <property name="id"><value>patch.bestpublishing.bootstrap.bookLibrarySiteLoader</value></property>
+        <property name="description"><value>patch.bestpublishing.bootstrap.bookLibrarySiteLoader.description</value></property>
+        <property name="fixesFromSchema"><value>0</value></property>
+        <property name="fixesToSchema"><value>${version.schema}</value></property>
+        <property name="targetSchema"><value>20000</value></property>
+        <property name="dependsOn" >
+            <list>
+                <ref bean="org.acme.bestpublishing.bootstrap.patch.bestPubGroupMembershipsLoader" />
+            </list>
+        </property>
+        <property name="spacesBootstrap" ref="siteLoadBootstrap-Spaces"/>
+        <property name="usersBootstrap" ref="siteLoadBootstrap-Users"/>
+        <property name="siteService" ref="siteService"/>
+        <property name="authorityService" ref="authorityService"/>
+        <property name="behaviourFilter" ref="policyBehaviourFilter"/>
+        <property name="siteName">
+            <value>book-library</value>
+        </property>
+        <property name="bootstrapViews">
+            <map>
+                <entry key="contents">
+                    <props>
+                        <prop key="location">alfresco/module/${project.artifactId}/bootstrap/site/book-library/book-library.acp</prop>
+                    </props>
+                </entry>
+                <entry key="groups">
+                    <props>
+                        <prop key="location">alfresco/module/${project.artifactId}/bootstrap/site/book-library/userAndGroup-roles.txt</prop>
+                    </props>
+                </entry>
+            </map>
+        </property>
+    </bean>
 
 </beans>

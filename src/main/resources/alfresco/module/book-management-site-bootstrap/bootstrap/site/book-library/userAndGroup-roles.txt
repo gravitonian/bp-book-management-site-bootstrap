@@ -1,0 +1,2 @@
+bestpubconsumer=GROUP_site_book-library_SiteConsumer
+GROUP_BESTPUB_CONSUMERS=GROUP_site_book-management_SiteConsumer
