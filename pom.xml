@@ -4,7 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>book-management-site-bootstrap</artifactId>
-
+    <version>1.1-SNAPSHOT</version>
+    
     <!-- UPDATED -->
     <name>BestPub Site System Folders Bootstrap</name>
     <description>Bootstraps the Book Management site and the BestPub system folders into the Data Dictionary</description>
